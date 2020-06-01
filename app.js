@@ -18,11 +18,29 @@ const scissors_div = document.getElementById("s");
 function game(userChoice) 
 {
     const computerChoice = getComputerChoice();
-    console.log("userChoice => " + userChoice);
-    console.log("computerChoice =>" + computerChoice);
+    const name="pine";
+    switch (userChoice + computerChoice) {
+        case"rs":
+        case"pr":
+        case "sp":
+            console.log("USER WINS ");
+            break;
+        case "rp":
+        case"ps":
+        case "sr":
+            console.log("USER LOSES ");
+            break;
+        case"rr":
+        case"pp":
+        case "ss":
+            console.log("DRAW ");
+            break;
+    }
+
 }
 
-
+//array containing id name of choice
+    // on click it generates random no. returns id name of that index
 function getComputerChoice()
 {
     const choices = ['r','p','s'];//elems same as id, get random option using math

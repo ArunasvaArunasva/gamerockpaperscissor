@@ -17,15 +17,19 @@ const scissors_div = document.getElementById("s");
     //fx to get userchoice
 function game(userChoice) 
 {
-
+    const computerChoice = getComputerChoice();
+    console.log("userChoice => " + userChoice);
+    console.log("computerChoice =>" + computerChoice);
 }
+
 
 function getComputerChoice()
 {
     const choices = ['r','p','s'];//elems same as id, get random option using math
-    console.log(Math.random());
+   const randomNumber = (Math.floor(Math.random()*3));
+   return choices[randomNumber];
 }
-    
+
 function main()
 {
     rock_div.addEventListener('click',function () {

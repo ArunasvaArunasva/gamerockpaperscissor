@@ -97,3 +97,21 @@ header  h1{
     font-size: 20px;
     margin-top: 20px;
 }
+.reset{
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.reset > button{
+
+    width: 30%;
+    height: 5%;
+    text-align: center;
+    background: red;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+}
+
+
